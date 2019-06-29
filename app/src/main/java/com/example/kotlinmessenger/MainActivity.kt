@@ -1,17 +1,12 @@
 package com.example.kotlinmessenger
 
 import android.os.Bundle
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
 import androidx.core.view.GravityCompat
 import androidx.appcompat.app.ActionBarDrawerToggle
-import android.view.MenuItem
-import androidx.drawerlayout.widget.DrawerLayout
-import com.google.android.material.navigation.NavigationView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
-import android.view.Menu
 import android.view.View
+import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 import kotlinx.android.synthetic.main.nav_header_main.*
@@ -40,9 +35,16 @@ class MainActivity : AppCompatActivity() {
     fun nav_Header_onClick (view: View) { // add channel \ bio change
         when (view) {
             user_bio_nav_header -> {
+                Toast.makeText(this,"bio", Toast.LENGTH_SHORT).show()
 
             }
             user_image_nav_header -> {
+                Toast.makeText(this,"image",Toast.LENGTH_SHORT).show()
+
+            }
+            add_channel_nav_header ->{
+                Toast.makeText(this,"channel",Toast.LENGTH_SHORT).show()
+
 
             }
         }
@@ -50,10 +52,10 @@ class MainActivity : AppCompatActivity() {
     fun sendMessageButtononClick(view: View)
     { // send message
 
-
-
-
+        Toast.makeText(this,"send",Toast.LENGTH_SHORT).show()
 
         }
+
+
     }
 
